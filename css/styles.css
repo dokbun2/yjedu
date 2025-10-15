@@ -865,15 +865,15 @@ section {
         flex-direction: row;
         gap: 0.5rem;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .filter-group {
-        flex: 1;
+        flex: 0;
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .filter-group label {
@@ -2654,11 +2654,26 @@ section {
 
     .filter-bar {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .filter-group {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     .filter-select {
-        width: 100%;
+        width: 80%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .filter-group label {
+        margin-bottom: 0.5rem;
     }
 
     .benefits-grid,
