@@ -1,5 +1,31 @@
 // Navigation functionality
 document.addEventListener('DOMContentLoaded', function() {
+    // Video Sound Toggle
+    const soundToggle = document.getElementById('soundToggle');
+    const heroVideo = document.getElementById('heroVideo');
+    const soundOn = document.querySelector('.sound-on');
+    const soundOff = document.querySelector('.sound-off');
+
+    if (soundToggle && heroVideo) {
+        soundToggle.addEventListener('click', function() {
+            if (heroVideo.muted) {
+                heroVideo.muted = false;
+                soundOn.style.display = 'block';
+                soundOff.style.display = 'none';
+            } else {
+                heroVideo.muted = true;
+                soundOn.style.display = 'none';
+                soundOff.style.display = 'block';
+            }
+        });
+
+        // Initialize with muted state icons
+        if (heroVideo.muted) {
+            soundOn.style.display = 'none';
+            soundOff.style.display = 'block';
+        }
+    }
+
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');

@@ -47,11 +47,23 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <video autoplay muted loop playsinline class="hero-background-video">
+        <video autoplay muted loop playsinline class="hero-background-video" id="heroVideo">
             <source src="https://uc91676abe4c3659df7d94550cba.dl.dropboxusercontent.com/cd/0/inline/CzRSduejR_Ttf3Q0KFqgZBXzM81dQFg8KzKX52uQi7v8_0YR_W7jZzqgx6sXG2g9NdWhIPdOLwpqarkxz1XHDBSlRM9d_6Xih_p6grlqWfwRUZeDBxphQql7f2BDr7hXH65rwlXD0JBMrCTQ03kWvjDO/file#" type="video/mp4">
             브라우저가 동영상을 지원하지 않습니다.
         </video>
         <div class="hero-overlay"></div>
+        <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound">
+            <svg class="sound-on" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            <svg class="sound-off" style="display: none;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15"></line>
+                <line x1="17" y1="9" x2="23" y2="15"></line>
+            </svg>
+        </button>
         <div class="wrapper-max">
             <div class="hero-content">
                 <div class="hero-text">
