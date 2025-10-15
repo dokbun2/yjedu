@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "YJ Education certification services website",
   "scripts": {
-    "build": "echo 'No build required for static site'",
-    "deploy": "echo 'Static site ready for deployment'"
+    "build": "mkdir -p public && cp -r *.html css fonts images js public/",
+    "clean": "rm -rf public"
   },
   "author": "dokbun2",
   "license": "ISC"
