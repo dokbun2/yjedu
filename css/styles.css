@@ -277,12 +277,18 @@ ul {
     align-items: center;
 }
 
-.furniture-showcase img {
+.furniture-showcase img,
+.furniture-showcase .hero-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-video {
+    display: block;
+    background: #000;
 }
 
 .furniture-item {
@@ -2505,7 +2511,8 @@ section {
         height: 200px;
     }
 
-    .furniture-showcase img {
+    .furniture-showcase img,
+    .furniture-showcase .hero-video {
         height: 250px;
     }
 }
