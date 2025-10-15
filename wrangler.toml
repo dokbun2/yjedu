@@ -1,0 +1,14 @@
+name = "yjedu"
+compatibility_date = "2025-10-15"
+
+[site]
+bucket = "./"
+
+[[build]]
+command = ""
+output = ""
+
+[assets]
+directory = "./"
+serve_single_page_app = false
+not_found_page = "404.html"
